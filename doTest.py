@@ -4,7 +4,6 @@ import json
 from PIL import ImageTk, Image
 import random
 
-
 # create a start button
 def startWidget():
     global START_BUTTON
@@ -126,7 +125,7 @@ def createQuestion(index, score, var_int, prev_ref):
         finish_button.pack(anchor="s")
 
 
-NUM_OF_QUESTIONS = 2
+NUM_OF_QUESTIONS = 2 # This is supposed to be 108 after finishing editing the JSON file
 NUM_OF_QUESTION_PER_SET = 30
 if __name__ == "__main__":
     main_windows = tk.Tk()
