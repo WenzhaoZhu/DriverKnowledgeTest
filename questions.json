@@ -1,0 +1,33 @@
+{
+    "0": 
+    {
+        "Q": "Unless otherwise posted, what is the basic speed limit outside a city, \ntown or village on a primary highway?",
+        "P": "None",
+        "O": ["100km/h", "90km/h", "110km/h", "80km/h"],
+        "A": 1
+    },
+
+    "1": 
+    {
+        "Q": "When backing a passenger vehicle to the left, a driver should:",
+        "P": "None",
+        "O": ["Look in the inside rear-view mirror and make steering adjustments \nas necessary",
+              "Look over the right shoulder with occasional glances to the front",
+              "Look over the left shoulder with occasional glances to the front",
+              "Without shoulder checking, use the inside and outside rear-view mirrors \nto ensure thed.best view to the rear and both sides of the vehicle"],
+        "A": 3
+    },
+
+    "7":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic7.jpg",
+        "O": ["Route for vehicles over 4500 kg",
+              "Route for slow moving vehicles",
+              "Reserved lane for buses",
+              "Dangerous goods route"],
+        "A": 4
+    }
+
+
+}
