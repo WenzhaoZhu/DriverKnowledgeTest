@@ -11,14 +11,55 @@
     {
         "Q": "When backing a passenger vehicle to the left, a driver should:",
         "P": "None",
-        "O": ["Look in the inside rear-view mirror and make steering adjustments \nas necessary",
+        "O": ["Look in the inside rear-view mirror and make steering adjustments as necessary",
               "Look over the right shoulder with occasional glances to the front",
               "Look over the left shoulder with occasional glances to the front",
-              "Without shoulder checking, use the inside and outside rear-view mirrors \nto ensure thed.best view to the rear and both sides of the vehicle"],
+              "Without shoulder checking, use the inside and outside rear-view mirrors to ensure \nthe best view to the rear and both sides of the vehicle"],
         "A": 3
     },
 
-    "7":
+    "2": 
+    {
+        "Q": "When approaching an intersection and facing a traffic control light that is showing \nagreen right-turn arrow and a red light, a driver:",
+        "P": "None",
+        "O": ["Must stop and wait for a green light before turning in the direction of the arrow",
+              "May go straight through the intersection without stopping",
+              "May proceed when safe, without stopping, in the direction of the arrow",
+              "May turn left without stopping"],
+        "A": 3
+    },
+
+    "3":
+    {
+        "Q": "Alberta has a demerit point system where a fully licenced(non-learner, \nnonprobationary) driver is suspended when they accumulate:",
+        "P": "None",
+        "O": ["15 points", "8 points", "5 points", "12 points"],
+        "A": 1
+    },
+
+    "4":
+    {
+        "Q": "When passing a large truck on a two-way highway, a driver should:",
+        "P": "None",
+        "O": ["Leave extra room before returning to their lane", 
+              "Return to their lane when signalled by the truck's headlights", 
+              "Return to their lane when the truck is no longer visible in any of their rear-view \nmirrors", 
+              "Return to their lane once they have cleared the truck's front bumper"],
+        "A": 1
+    },
+
+    "5":
+    {
+        "Q": "Which statement best describes the steps for turning right at a red traffic light?",
+        "P": "None",
+        "O": ["Right turns on a red traffic light are never permitted", 
+              "Signal and make sure there is no sign prohibiting the turn, stop, look left and \nright, yield the right-of-way, then proceed", 
+              "Reduce speed before the turn, look right for cyclists, signal and proceed", 
+              "Signal and reduce speed before the turn, look left, yield to vehicles and proceed"],
+        "A": 2
+    },
+
+    "6":
     {
         "Q": "This sign indicates:",
         "P": "./pictures/Pic7.jpg",
@@ -27,7 +68,744 @@
               "Reserved lane for buses",
               "Dangerous goods route"],
         "A": 4
+    },
+
+    "7":
+    {
+        "Q": "A single solid white line between driving lanes in an urban area means:",
+        "P": "None",
+        "O": ["lt is a line separating traffic travelling in opposite directions", 
+              "Traffic on the right is moving faster than traffic on the left", 
+              "Lane changing is not permitted", 
+              "Lane change is permitted"],
+        "A": 3
+    },
+
+    "8":
+    {
+        "Q": "A “parking lane” as defined in the Basic Licence Driver's Handbook is:",
+        "P": "None",
+        "O": ["A lane closest to the curb, where parking is permitted but there are no meters", 
+              "All of these responses are correct", 
+              "That portion of a primary highway between the edge of the roadway to the right of \nthe direction of traffic and the nearest solid white line, not being the centre \nline marked on the roadway", 
+              "A lane immediately beside a row of parking meters in an urban area"],
+        "A":  3
+    },
+
+    "9":
+    {
+        "Q": "Shoulder checking means:",
+        "P": "None",
+        "O": ["Glancing towards the blind spot in the direction the driver intends to move", 
+              "Glancing into the left outside mirror", 
+              "Glancing into both the inside and outside mirrors", 
+              "Glancing into the right outside mirror"],
+        "A": 1
+    },
+
+    "10":
+    {
+        "Q": "This sign indicates",
+        "P": "./pictures/Pic11.jpg",
+        "O": ["Off-road facilities ahead", 
+              "Slippery when wet", 
+              "Uneven pavement", 
+              "Detour ahead"],
+        "A": 3
+    },
+
+    "11":
+    {
+        "Q": "A traffic-lane control light with an illuminated red “x” means:",
+        "P": "./pictures/Pic12.jpg",
+        "O": ["Prepare for an emergency vehicle travelling in that lane", 
+              "Reduce speed to below 30 km/h", 
+              "Use that lane only for the purpose of making left turns", 
+              "Travel is not permitted in that lane"],
+        "A": 4
+    },
+    
+    "12":
+    {
+        "Q": "Does a parent have the right to withdraw a previously given “parental consent” for \nsomeone under 18 years of age with respect to an operator's licence?",
+        "P": "None",
+        "O": ["Yes, provided the person is still under the age of 18 and is not self-supporting or \nmarried", 
+              "Yes, provided that both parents verbally agree to withdraw the consent at a \nregistry office", 
+              "No, once it is given it remains in effect until the person reaches 18 years of age", 
+              "No, but another consent form must be signed by both parents after a licence suspension"],
+        "A": 1
+    },
+    
+    "13":
+    {
+        "Q": "When approaching a Yield sign, you must:",
+        "P": "None",
+        "O": ["Yield the right-of-way to traffic not facing the sign and all pedestrians in the \nintersection", 
+              "Always sound the horn to warn other traffic within the intersection", 
+              "Expect all other vehicles to vield the right-of-way to you", 
+              "Come to a stop and proceed after looking to the right and left"],
+        "A": 1
+    },
+
+    "14":
+    {
+        "Q": "The term “over-driving” your headlights at night means:",
+        "P": "None",
+        "O": ["The driver cannot see clearly for 1000 metres", 
+              "The low beam headlights are not set properly", 
+              "The driver is travelling at a speed which would not permit them to see an object in \ntime to stop", 
+              "The driver has had the headlights on for too long a time"],
+        "A": 3
+    },
+    
+    "15":
+    {
+        "Q": "Under the Graduated Driver Licensing program, a driver will receive 2 demerits:",
+        "P": "None",
+        "O": ["For having more passengers than there are seat belts", 
+              "For not wearing a seat belt securely fastened", 
+              "For not wearing a seat belt", 
+              "For not wearing a seat belt properly adjusted"],
+        "A": 1
+    },
+
+    "16":
+    {
+        "Q": "Using the 2-second rule to judge a safe following distance when driving:",
+        "P": "None",
+        "O": ["Is more accurate on rural highways than in urban centres", 
+              "Is not accurate at speeds greater than 100 km/h", 
+              "Is accurate at any speed", 
+              "Is not accurate at speeds lower than 30 km/h"],
+        "A": 3
+    },
+
+    "17":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic18.jpg",
+        "O": ["Traffic entering from the right", 
+              "Winding road ahead", 
+              "Curve right", 
+              "Concealed intersection on the right"],
+        "A": 3
+    },
+    
+    "18":
+    {
+        "Q": "A driver approaching a flashing red traffic light must:",
+        "P": "None",
+        "O": ["Stop and wait for the flashing green light", 
+              "Reduce speed and proceed with caution", 
+              "Stop and proceed only when safe to do so", 
+              "Stop until the signal light turns green"],
+        "A": 3
+    },
+
+    "19":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic20.jpg",
+        "O": ["Do not enter", 
+              "Slow moving vehicles ahead", 
+              "Warning, Yield sign ahead", 
+              "Warning, traffic is approaching"],
+        "A": 3
+    },
+
+    "20":
+    {
+        "Q": "According to the law in Alberta, it is the driver's responsibility to ensure that \nall passengers under what age are properly restrained in the vehicle?",
+        "P": "None",
+        "O": ["18 years", "24 years", "21 years", "16 years"],
+        "A": 4
+    },
+    
+    "21":
+    {
+        "Q": "When parallel parking, the vehicle's wheels closest to the curb must be within what \nmaximum distance?",
+        "P": "None",
+        "O": ["80 centimetres from the curb", 
+              "30 centimetres from the curb", 
+              "10 centimetres from the curb", 
+              "50 centimetres from the curb"],
+        "A": 4
+    },
+
+    "22":
+    {
+        "Q": "Who is responsible and legally obligated to report any medical condition, change in \nhealth, or physical disability that may affect a driver's ability to drive?",
+        "P": "None",
+        "O": ["The driver's employer", 
+              "The driver", 
+              "The driver's doctor", 
+              "The driver's insurance company"],
+        "A": 2
+    },
+
+    "23":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic24.jpg",
+        "O": ["Road narrows, left", 
+              "Two-way traffic", 
+              "Divided highway ends",
+              "Obstruction - keep left"],
+        "A": 1
+    },
+    
+    "24":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic25.jpg",
+        "O": ["Rumble strips", 
+              "Construction zone", 
+              "Bump", 
+              "Pavement ends"],
+        "A": 3
+    },
+
+    "25":
+    {
+        "Q": "Under the Graduated Driver Licensing program, what is the minimum amount of time \nthat a person must serve as a probationary Class 5 driver?",
+        "P": "None",
+        "O": ["6 months", "18 months", "2 years", "1 year"],
+        "A": 3
+    },
+
+    "26":
+    {
+        "Q": "A large “x” painted on the pavement indicates:",
+        "P": "None",
+        "O": ["Construction ahead", 
+              "The traffic lane is ending", 
+              "Railway crossing ahead", 
+              "Wild animal crossing ahead"],
+        "A": 3
+    },
+    
+    "27":
+    {
+        "Q": "A driver is required to report all collisions to the police when persons have been \ninjured or killed, or when combined damage to all vehicles or property is more than:",
+        "P": "None",
+        "O": ["$750", "$1000", "$250", "$500"],
+        "A": 2
+    },
+
+    "28":
+    {
+        "Q": "When a driver is stopping behind another vehicle in traffic:",
+        "P": "None",
+        "O": ["Remain a minimum of 10 metres from the vehicle ahead", 
+              "Allow sufficient space to move into another lane without reversing", 
+              "Maintain sufficient space as determined by the 2-second rule", 
+              "Keep back approximately 1 metre from the rear bumper of the vehicle ahead"],
+        "A": 2
+    },
+    
+    "29":
+    {
+        "Q": "If another vehicle is following too close, what should a driver do?",
+        "P": "None",
+        "O": ["Slow down gradually and encourage the other vehicle to pass", 
+              "Press hard on the brake pedal", 
+              "Increase speed to 10 km/h above the posted speed limit", 
+              "Activate the four-way flashers"],
+        "A": 1
+    },
+
+    "30":
+    {
+        "Q": "When recovering from a skid, a driver should:",
+        "P": "None",
+        "O": ["Accelerate and steer in the opposite direction of the skid", 
+              "Brake and counter-steer", 
+              "Steer in the direction the driver wants the front of the vehicle to go", 
+              "Brake and hold firmly on the steering wheel"],
+        "A": 3
+    },
+
+    "31":
+    {
+        "Q": "A “slow-moving vehicle” sign must be displayed on the rear of any vehicle that \nnormally travels at speeds less than:",
+        "P": "None",
+        "O": ["50 km/h", "40 km/h", "70 km/h", "60 km/h "],
+        "A": 2
+    },
+
+    "32":
+    {
+        "Q": "A driver attempting to turn left at a steady green traffic light:",
+        "P": "None",
+        "O": ["Has the right-of-way over oncoming traffic", 
+              "Must stop before the pedestrian crosswalk line, then proceed", 
+              "Has the right-of-way over pedestrians", 
+              "Must not cross the path of an approaching vehicle unless it is safe"],
+        "A": 4
+    },
+
+    "33":
+    {
+        "Q": "A 'Weave Zone' is best described as:",
+        "P": "None",
+        "O": ["A place on a highway where the entrance and exit lanes are cose together, and \nvehicles that are slowing to exit the highway must drive between vehicles that are \naccelerating to enter the highway", 
+              "An area on the highway that is used for emergency parking", 
+              "A place where the highway has a series of curves that require the driver to slow down", 
+              "A limited access area on a highway where a driver can legally back their vehicle \nwhen they miss their exit"],
+        "A": 1
+    },
+
+    "34":
+    {
+        "Q": "A road test will be refused by a driver examiner if:",
+        "P": "None",
+        "O": ["The vehicle has a seating capacity greater than 7", 
+              "The vehicle is registered as a farm vehicle", 
+              "The vehicle is a rental vehicle", 
+              "The vehicle is not mechanically safe"],
+        "A": 4
+    },
+
+    "35":
+    {
+        "Q": "Is a driver allowed to exceed the speed limit when passing another vehicle?",
+        "P": "None",
+        "O": ["Only when passing more than one vehicle at a time", 
+              "Yes, but not more than 10 km/h over the speed limit", 
+              "Yes, on primary highways only", 
+              "No, it is never permitted"],
+        "A": 4
+    },
+
+    "36":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic137.jpg",
+        "O": ["Children playing in residential area", 
+              "Pedestrian crosswalk ahead", 
+              "School area", 
+              "Playground zone"],
+        "A": 3
+    },
+
+    "37":
+    {
+        "Q": "The speed limit in a construction zone must be obeyed:",
+        "P": "None",
+        "O": ["Only during daylight hours", 
+              "Only when a flag person is posted nearby", 
+              "At all times", 
+              "Only when construction workers are present"],
+        "A": 3
+    },
+
+    "38":
+    {
+        "Q": "In a vehicle that does not have anti-lock brakes, threshold braking refers to:",
+        "P": "None",
+        "O": ["Applying an even braking force to the point just before the wheels lock, and easing \noff slightly if the wheels lock", 
+              "Pumping the brake pedal repeatedly until the vehicle comes to a stop", 
+              "Releasing pressure on the brake pedal, then reapplying pressure until the wheels lock", 
+              "Applying enough force to the brake pedal to lock the wheels and keep them locked"],
+        "A": 1
+    },
+
+    "39":
+    {
+        "Q": "When a driver's vehicle is approached by an emergency vehicle sounding a siren, from \nany direction on a two-way road, the driver must:",
+        "P": "None",
+        "O": ["Continue at a reduced speed and allow sufficient space for the emergency vehicle to pass", 
+              "Turn on their four-way hazard lights", 
+              "Stop only when the emergency vehicle has difficulty in passing", 
+              "Drive as close as possible to the right curb or edge of the road and stop"],
+        "A": 4
+    },
+
+    "40":
+    {
+        "Q": "The recommended braking procedure to bring a vehicle to a normal, smooth stop is:",
+        "P": "None",
+        "O": ["Continually increase brake pressure until the wheels lock", 
+              "Shift the vehicle into neutral and apply steady pressure to the brake pedal until \nthe vehicle comes to a stop", 
+              "Pump the brake pedal smoothly until the vehicle stops", 
+              "Apply brake pressure, ease off slightly just before the vehicle stops, then re-apply sufficient pressure to stop"],
+        "A": 4
+    },
+
+    "41":
+    {
+        "Q": "In Alberta, the law requires that seat belts must be worn:",
+        "P": "None",
+        "O": ["Only while carrying passengers", 
+              "Properly at all times", 
+              "Only when driving at highway speeds", 
+              "Only when driving in the city"],
+        "A": 2
+    },
+
+    "42":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic43.jpg",
+        "O": ["Heavy trucks only", "Do not pass", "No vehicles allowed", "Do not enter"],
+        "A": 2
+    },
+
+    "43":
+    {
+        "Q": "A driver entering a traffic circle:",
+        "P": "None",
+        "O": ["Must yield to traffic on the right", 
+              "Must yield to vehicles in the traffic circle", 
+              "Has the right-of-way", 
+              "Must use the courtesy rule and yield to the vehicle that arrived first"],
+        "A": 2
+    },
+
+    "44":
+    {
+        "Q": "A deceleration lane is:",
+        "P": "None",
+        "O": ["A lane where vehicles reduce speed when exiting a highway", 
+              "The right lane of a four-lane highway for use by slower moving vehicles", 
+              "The lane immediately to the right of a solid yellow line on a highway", 
+              "A lane on hills for use by slower moving vehicles"],
+        "A": 1
+    },
+
+    "45":
+    {
+        "Q": "When turning left from a two-way road onto a one-way road, what lane should the \nvehicle enter?",
+        "P": "None",
+        "O": ["The lane immediately to the right of centre", 
+              "The lane nearest the curb on the left side of the one-way road", 
+              "The centre lane of the one-way road", 
+              "The right lane of the one-way road"],
+        "A": 2
+    },
+
+    "46":
+    {
+        "Q": "When two vehicles approach an uncontrolled “T” intersection at right angles to each \nother at approximately the same time:",
+        "P": "None",
+        "O": ["The vehicle on the left must yield the right-of-way", 
+              "The vehicle on the left has the right-of-way", 
+              "The vehicle going straight through always has the right-of-way",
+              "Both vehicles must stop"],
+        "A": 1
+    },
+
+    "47":
+    {
+        "Q": "Unless otherwise permitted, what lane must a driver be in to turn left from a one-way road?",
+        "P": "None",
+        "O": ["The lane to the right of centre", 
+              "The left lane nearest the left curb", 
+              "The lane closes to the right curb", 
+              "The centre lane"],
+        "A": 2
+    },
+
+    "48":
+    {
+        "Q": "Which statement describes the steps required to reverse in a straight line?",
+        "P": "None",
+        "O": ["Keep both hands on the steering wheel and constantly use the inside rear-view \nmirror for guidance", 
+              "Place the right hand at the top of the steering wheel, look over the left shoulder \nand use the outside left rear-view mirror", 
+              "Place the left hand at the top of the steering wheel and look over the right \nshoulder through the rear window", 
+              "Place the left hand at the bottom of the steering wheel and use both outside mirrors"],
+        "A": 3
+    },
+
+    "49":
+    {
+        "Q": "An acceleration lane is:",
+        "P": "None",
+        "O": ["A lane with broken line markings", 
+              "A lane on hills, designated for faster moving vehicles", 
+              "The left lane of a four-lane highway, for use when passing slow moving vehicles",
+              "A lane in a merge area for use by vehicles entering the highway"],
+        "A": 4
+    },
+
+    "50":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic51.jpg",
+        "O": ["Lane ends, loss of right lane", 
+              "Added lane (free flow)", 
+              "Curve right", 
+              "Dual turn lane ahead"],
+        "A": 1
+    },
+
+    "51":
+    {
+        "Q": "Under the Graduated Driver Licensing program, a learner with a Class 7 licence is \nnot permitted to drive a vehicle between the hours of:",
+        "P": "None",
+        "O": ["9:00 A.M.and 5:00 P.M.", 
+              "Midnight and 5:00 A.M.", 
+              "10:00 P.M.and 6:00 A.M.", 
+              "Midnight and 7:00 A.M."],
+        "A": 2
+    },
+
+    "52":
+    {
+        "Q": "What does a flashing yellow traffic light mean?",
+        "P": "None",
+        "O": ["The traffic light will turn green", 
+              "Stop until the light stops flashing", 
+              "The traffic light will turn red", 
+              "Proceed with caution"],
+        "A": 3
+    },
+
+    "53":
+    {
+        "Q": "Unless otherwise posted, the school zone speed limits are in effect on school days \nduring the following hours",
+        "P": "None",
+        "O": ["8:30 A.M.to 1 hour after sunset", 
+              "8:00 A.M. to 9:30 A.M., 11:30 A.M. to 1:30 P.M. and 3:00 P.M. to 4:30 P.M.", 
+              "8:30 A.M. to 9:30 A.M., 12:00 P.M. to 1:00 P.M. and 3:30 P.M. to 4:00 P.M.", 
+              "8:00 A.M. to 4:30 P.M."],
+        "A": 2
+    },
+
+    "54":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic55.jpg",
+        "O": ["Playground zone", 
+              "Pedestrian crosswalk", 
+              "Designated school bus stop", 
+              "School zone"],
+        "A": 2
+    },
+
+    "55":
+    {
+        "Q": "When driving in the right lane on a highway, what should a driver do if another \nvehicle attempts to merge from an acceleration lane on the right?",
+        "P": "None",
+        "O": ["Stop to allow the other vehicle in", 
+              "Accelerate to close any gap in the traffic flow", 
+              "Move into the left lane if it is safe to do so, or be prepared to adjust speed", 
+              "Insist that the other vehicle yield the right-of-way"],
+        "A": 3
+    },
+
+    "56":
+    {
+        "Q": "Which direction should a vehicle's front wheels be turned when parked uphill on a \ntwo-way road with a curb?",
+        "P": "None",
+        "O": ["Parallel to the curb", "To the left", "To the right", "Straight ahead"],
+        "A": 2
+    },
+
+    "57":
+    {
+        "Q": "When approaching the rear of a stopped school bus that has its alternately flashing \nred lights activated, a driver must:",
+        "P": "None",
+        "O": ["Sound the horn to alert any pedestrians and pass at a slow rate of speed", 
+              "Stop behind the bus and wait until the alternating red lights stop flashing", 
+              "Move to the left lane, reduce speed to 30 km/h and pass cautiously", 
+              "Stop behind the bus, look carefully for pedestrians and, if clear, drive past the \nbus slowly"],
+        "A": 2
+    },
+
+    "58":
+    {
+        "Q": "When travelling in urban areas, drivers should scan the road approximately",
+        "P": "None",
+        "O": ["25 to 30 seconds ahead", 
+              "12 to 15 seconds ahead", 
+              "20 to 30 seconds ahead", 
+              "1 to 6 seconds ahead"],
+        "A": 2
+    },
+
+    "59":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic60.jpg",
+        "O": ["T intersection", 
+              "Traffic lane ends", 
+              "Concealed intersection", 
+              "Trucks entering highway ahead"],
+        "A": 1
+    },
+
+    "60":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic61.jpg",
+        "O": ["Winding road ahead", 
+              "Weave zone ahead", 
+              "Slippery when wet", 
+              "Lane changing permitted"],
+        "A": 1
+    },
+
+    "61":
+    {
+        "Q": "Before leaving a parallel parking space on the right side of a road:",
+        "P": "None",
+        "O": ["Turn on the right signal", 
+              "Shoulder check to the left", 
+              "Shoulder check to the right", 
+              "Use an arm signal straight out and up"],
+        "A": 2
+    },
+
+    "62":
+    {
+        "Q": "When approaching the top of a hill on a two-lane highway:",
+        "P": "None",
+        "O": ["Exceeding the speed limit is permitted", 
+              "Flash the headlights to warn oncoming vehicles", 
+              "Stay to the right portion of the lane", 
+              "Keep close to the centre line to prevent others from passing"],
+        "A": 3
+    },
+
+    "63":
+    {
+        "Q": "Playground zones are in effect:",
+        "P": "None",
+        "O": ["From 8:30 A.M. to 1 hour after sunset", 
+              "From 8:00 A.M. to 8:00 P.M.", 
+              "During daylight hours and until 11:00 P.M.", 
+              "Only when school lets out at noon and after 4:30 P.M."],
+        "A": 1
+    },
+
+    "64":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic65.jpg",
+        "O": ["'T' intersection", 
+              "Winding road ahead", 
+              "Merging traffic", 
+              "Road narrows to the right"],
+        "A": 3
+    },
+
+    "65":
+    {
+        "Q": "According to the Basic Licence Driver's Handbook, most skids are the result of:",
+        "P": "None",
+        "O": ["Bad brakes", "lcy roads", "Bad tires", "Driver error"],
+        "A": 4
+    },
+
+    "66":
+    {
+        "Q": "How close can a driver legally park a vehicle to a Stop sign?",
+        "P": "None",
+        "O": ["10 m", "5 m", "3 m", "1.5 m"],
+        "A": 2
+    },
+
+    "67":
+    {
+        "Q": "Parking in a space reserved for persons with disabilities is permitted:",
+        "P": "None",
+        "O": ["When all other parking spaces are filled", 
+              "While the driver is waiting in the vehicle", 
+              "When a driver stops for less than 5 minutes", 
+              "When the vehicle has a proper identifying placard or licence plate"],
+        "A": 4
+    },
+
+    "68":
+    {
+        "Q": "At what minimum distance must headlights be dimmed at night when approaching another \nvehicle from behind?",
+        "P": "None",
+        "O": ["60 m", "300 m", "150 m", "100 m"],
+        "A": 3
+    },
+
+    "69":
+    {
+        "Q": "When are dual turns permitted at an intersection?",
+        "P": "./pictures/Pic70.jpg",
+        "O": ["Only when turning from a one-way road onto a one-way road", 
+              "Only when indicated by pavement markings or traffic control signs", 
+              "Any time there are at least 2 lanes on the road being entered", 
+              "Only when the road has 6 or more lanes"],
+        "A": 2
+    },
+
+    "70":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic71.jpg",
+        "O": ["Through lane only", 
+              "Passing permitted", 
+              "No turns permittea", 
+              "Two-way traffic"],
+        "A": 4
+    },   
+
+    "71":
+    {
+        "Q": "Under the Graduated Driver Licensing program, a learner with a Class 7 operator's \nlicense is suspended when they accumulate",
+        "P": "None",
+        "O": ["15 demerits", "12 demerits", "8 demerits", "7 demerits"],
+        "A": 3
+    },   
+
+    "72":
+    {
+        "Q": "Speed limit signs indicate:",
+        "P": "None",
+        "O": ["The speed you should travel under all driving conditions", 
+              "The minimum speed permitted on all highways", 
+              "The maximum speed permitted when conditions are favourable", 
+              "The maximum speed permitted except when passing"],
+        "A": 3
+    },   
+
+    "73":
+    {
+        "Q": " An “uncontrolled intersection”:",
+        "P": "None",
+        "O": ["Has a flashing yellow light for one direction of traffic and a flashing red light \nfor the other direction of traffic", 
+              "Has traffic signs but no traffic control signal lights", 
+              "Has no traffic control signal lights or traffic signs", 
+              "Has Yield signs but no Stop signs"],
+        "A": 3
+    },   
+
+    "74":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic75.jpg",
+        "O": ["Sharp left curve in the road ahead", 
+              "Left turns are prohibited", 
+              "Vehicles may turn left or go straight", 
+              "Double lane left turn"],
+        "A": 4
+    },   
+
+    "75":
+    {
+        "Q": "When facing a Merge sign a driver should:",
+        "P": "None",
+        "O": ["Stop at the entrance to the other highway and wait until a gap in traffic occurs \nbefore proceeding", 
+              "Watch for a gap in traffic on the highway they are entering, adjust to highway \nspeed in the acceleration lane and blend in smoothly", 
+              "Stop and yield the right-of-way to traffic already on the highway", 
+              "Reduce speed and proceed with caution"],
+        "A": 2
     }
 
 
+    
+    
+    
+    
+    
+    
+
+    
 }
