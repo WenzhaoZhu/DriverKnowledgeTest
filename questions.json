@@ -83,7 +83,7 @@
 
     "8":
     {
-        "Q": "A “parking lane” as defined in the Basic Licence Driver's Handbook is:",
+        "Q": "A 'parking lane' as defined in the Basic Licence Driver's Handbook is:",
         "P": "None",
         "O": ["A lane closest to the curb, where parking is permitted but there are no meters", 
               "All of these responses are correct", 
@@ -116,7 +116,7 @@
 
     "11":
     {
-        "Q": "A traffic-lane control light with an illuminated red “x” means:",
+        "Q": "A traffic-lane control light with an illuminated red 'x' means:",
         "P": "./pictures/Pic12.jpg",
         "O": ["Prepare for an emergency vehicle travelling in that lane", 
               "Reduce speed to below 30 km/h", 
@@ -127,7 +127,7 @@
     
     "12":
     {
-        "Q": "Does a parent have the right to withdraw a previously given “parental consent” for \nsomeone under 18 years of age with respect to an operator's licence?",
+        "Q": "Does a parent have the right to withdraw a previously given 'parental consent' for \nsomeone under 18 years of age with respect to an operator's licence?",
         "P": "None",
         "O": ["Yes, provided the person is still under the age of 18 and is not self-supporting or \nmarried", 
               "Yes, provided that both parents verbally agree to withdraw the consent at a \nregistry office", 
@@ -149,11 +149,11 @@
 
     "14":
     {
-        "Q": "The term “over-driving” your headlights at night means:",
+        "Q": "The term 'over-driving' your headlights at night means:",
         "P": "None",
         "O": ["The driver cannot see clearly for 1000 metres", 
               "The low beam headlights are not set properly", 
-              "The driver is travelling at a speed which would not permit them to see an object in \ntime to stop", 
+              "The driver is travelling at a speed which would not permit them to see an object \nin time to stop", 
               "The driver has had the headlights on for too long a time"],
         "A": 3
     },
@@ -275,7 +275,7 @@
 
     "26":
     {
-        "Q": "A large “x” painted on the pavement indicates:",
+        "Q": "A large 'x' painted on the pavement indicates:",
         "P": "None",
         "O": ["Construction ahead", 
               "The traffic lane is ending", 
@@ -327,7 +327,7 @@
 
     "31":
     {
-        "Q": "A “slow-moving vehicle” sign must be displayed on the rear of any vehicle that \nnormally travels at speeds less than:",
+        "Q": "A 'slow-moving vehicle' sign must be displayed on the rear of any vehicle that \nnormally travels at speeds less than:",
         "P": "None",
         "O": ["50 km/h", "40 km/h", "70 km/h", "60 km/h "],
         "A": 2
@@ -380,7 +380,7 @@
     "36":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic137.jpg",
+        "P": "./pictures/Pic37.jpg",
         "O": ["Children playing in residential area", 
               "Pedestrian crosswalk ahead", 
               "School area", 
@@ -414,7 +414,7 @@
     {
         "Q": "When a driver's vehicle is approached by an emergency vehicle sounding a siren, from \nany direction on a two-way road, the driver must:",
         "P": "None",
-        "O": ["Continue at a reduced speed and allow sufficient space for the emergency vehicle to pass", 
+        "O": ["Continue at a reduced speed and allow sufficient space for the emergency vehicle \nto pass", 
               "Turn on their four-way hazard lights", 
               "Stop only when the emergency vehicle has difficulty in passing", 
               "Drive as close as possible to the right curb or edge of the road and stop"],
@@ -428,7 +428,7 @@
         "O": ["Continually increase brake pressure until the wheels lock", 
               "Shift the vehicle into neutral and apply steady pressure to the brake pedal until \nthe vehicle comes to a stop", 
               "Pump the brake pedal smoothly until the vehicle stops", 
-              "Apply brake pressure, ease off slightly just before the vehicle stops, then re-apply sufficient pressure to stop"],
+              "Apply brake pressure, ease off slightly just before the vehicle stops, then \nre-apply sufficient pressure to stop"],
         "A": 4
     },
 
@@ -486,7 +486,7 @@
 
     "46":
     {
-        "Q": "When two vehicles approach an uncontrolled “T” intersection at right angles to each \nother at approximately the same time:",
+        "Q": "When two vehicles approach an uncontrolled 'T' intersection at right angles to each \nother at approximately the same time:",
         "P": "None",
         "O": ["The vehicle on the left must yield the right-of-way", 
               "The vehicle on the left has the right-of-way", 
@@ -768,7 +768,7 @@
 
     "73":
     {
-        "Q": " An “uncontrolled intersection”:",
+        "Q": " An 'uncontrolled intersection':",
         "P": "None",
         "O": ["Has a flashing yellow light for one direction of traffic and a flashing red light \nfor the other direction of traffic", 
               "Has traffic signs but no traffic control signal lights", 
@@ -797,15 +797,345 @@
               "Stop and yield the right-of-way to traffic already on the highway", 
               "Reduce speed and proceed with caution"],
         "A": 2
-    }
+    },
 
+    "76":
+    {
+        "Q": "In reduced visibility due to fog, smoke or snow, use the:",
+        "P": "None",
+        "O": ["Park lights", 
+              "Headlights on high beam", 
+              "Headlights on low beam", 
+              "Daytime running lights"],
+        "A": 3
+    },
 
-    
-    
-    
-    
-    
-    
+    "77":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic78.jpg",
+        "O": ["Emergency vehicles entering roadway", 
+              "The designated lane is closed", 
+              "Railway crossing", 
+              "Do not enter"],
+        "A": 3
+    },
 
-    
+    "78":
+    {
+        "Q": "Is a driver allowed to turn right at a red traffic control light?",
+        "P": "None",
+        "O": ["Yes, but only when a sign permits such a turn", 
+              "Yes, if the driver reduces speed and there is no traffic or pedestrian in the \nintersection, and no sign that prohibits such a turn", 
+              "Yes, if the driver stops and there is no traffic, pedestrian or sign that \nprohibits such a turn", 
+              "No, right turns on a red traffic light are never permitted"],
+        "A": 3
+    },
+
+    "79":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic80.jpg",
+        "O": ["Lane is reserved for use by the specified vehicles", 
+              "One-way traffic only", 
+              "Car pool vehicles only", 
+              "Lane can be used for dangerous goods vehicles"],
+        "A": 1
+    },
+
+    "80":
+    {
+        "Q": "When a vehicle is stopped to allow a pedestrian to cross the road, other vehicles \nthat are approaching from the rear:",
+        "P": "None",
+        "O": ["May pass the stopped vehicle if there is no oncoming traffic that may impede \npassing safely", 
+              "Must not pass the stopped vehicle. lt is illegal", 
+              "May pass the stopped vehicle when eve contact is made with the pedestrian and the \npedestrian stops", 
+              "May pass the stopped vehicle when the pedestrian crossing signal has changed \nto'Don't Walk'"],
+        "A": 2
+    },
+
+    "81":
+    {
+        "Q": "When a head restraint is raised to the proper position, the centre of the head \nrestraint is:",
+        "P": "None",
+        "O": ["Level with the top of the ears", 
+              "Level with the top of the shoulders", 
+              "Level with the neck", 
+              "Level with the top of the head"],
+        "A": 1
+    },
+
+    "82":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic83.jpg",
+        "O": ["School zone ahead", 
+              "Caution log trucks turning", 
+              "Traffic control signal advance warning", 
+              "Pedestrian crosswalk ahead"],
+        "A": 3
+    },
+
+    "83":
+    {
+        "Q": "When a 'PASSING LANE AHEAD' sign is posted, the driver of a slower moving vehicle \nshould:",
+        "P": "None",
+        "O": ["Use the right lane and reduce their speed to half the posted speed limit", 
+              "Use the left lane only", 
+              "Increase speed", 
+              "Move into the right lane when safe"],
+        "A": 4
+    },
+
+    "84":
+    {
+        "Q": "When approaching the rear of a school bus that is displaying alternating flashing \namber lights, a driver should",
+        "P": "None",
+        "O": ["Be prepared to stop as this is a warning that the alternating flashing red lights \nwill come on once the bus has stopped", 
+              "Be prepared to stop as this could be a warning that there is a collision ahead and \nthe traffic flow has stopped", 
+              "Stop immediately because the school bus is loading or unloading students", 
+              "Use caution as the school bus is approaching a railroad crossing and is about to stop"],
+        "A": 1
+    },
+
+    "85":
+    {
+        "Q": "In the Basic Licence Driver's Handbook, 'nighttime' is defined as the period of time:",
+        "P": "None",
+        "O": ["Beginning 1 hour before sunset and ending 1 hour after the following sunrise", 
+              "Beginning at sunset and ending at the following sunrise", 
+              "Between 7:00 P.M.and 7:00 A.M.", 
+              "Beginning 1 hour after sunset and ending 1 hour before the following sunrise"],
+        "A": 4
+    },
+
+    "86":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic87.jpg",
+        "O": ["No through traffic or right turns", 
+              "Turn left or go straight through", 
+              "Turn from a one-way road onto a one-way road", 
+              "Straight through or right turn"],
+        "A": 4
+    },
+
+    "87":
+    {
+        "Q": "A vehicle exiting a parking lot onto a roadway:",
+        "P": "None",
+        "O": ["Must stop only if there is a Stop sign", 
+              "Must come to a complete stop", 
+              "Must stop before crossing the sidewalk only if there are predestrians present", 
+              "ls not required to stop"],
+        "A": 2
+    },
+
+    "88":
+    {
+        "Q": "When approaching a railway crossing that has the flashing red light and bell activated:",
+        "P": "None",
+        "O": ["Cross the tracks if the train is a minimum of 250 metres away", 
+              "Reduce speed, check for trains, and then proceed across the tracks", 
+              "Do not stop and do not change gears while crossing the tracks", 
+              "Stop at least 5 metres from the nearest rail until the train has passed"],
+        "A": 4
+    },
+
+    "89":
+    {
+        "Q": "The recommended method for travelling through a curve on a highway is:",
+        "P": "None",
+        "O": ["Reduce speed before the curve, stay in the lane and gently accelerate after \nentering the curve", 
+              "Maintain speed before the curve, brake in the curve, ook ahead and accelerate out \nof the curve", 
+              "Cover the brake pedal before the curve, counter-steer toward the outside of the \nlane and accelerate when exiting", 
+              "Accelerate before the curve, cover the brake pedal in the curve and accelerate \nafter leaving the curve"],
+        "A": 1
+    },
+
+    "90":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic91.jpg",
+        "O": ["Yield the right-of-way to pedestrians and traffic", 
+              "Dangerous goods vehicle placard: flammable gas", 
+              "Slow moving vehicle", 
+              "Warning, Yield sign ahead"],
+        "A": 3
+    },
+
+    "91":
+    {
+        "Q": "Why is it not safe to pass a loaded log-haul truck that is turning?",
+        "P": "None",
+        "O": ["The driver of the truck needs to fully concentrate on the turn and does not need \nthe added responsibility of a passing vehicle", 
+              "Loaded log-haul trucks obey the 6-second rule for turns", 
+              "A danger zone exists as the overhang of the logs from the tail end of the truck \ncould block all the lanes on a highway during the turn", 
+              "It is illegal to do so"],
+        "A": 3
+    },
+
+    "92":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic93.jpg",
+        "O": ["Playground zone ahead", 
+              "Pedestrian crossing ahead", 
+              "School bus stop ahead", 
+              "School zone ahead"],
+        "A": 3
+    },
+
+    "93":
+    {
+        "Q": "When encountering a funeral processions that is crossing an intersection",
+        "P": "None",
+        "O": ["Sound the horn before proceeding", 
+              "Proceed through the funeral procession only when there is sufficient space between \nvehicles", 
+              "Yield the right-of-way and do not break through the procession", 
+              "Flash the high beam headlights before proceeding"],
+        "A": 3
+    },
+
+    "94":
+    {
+        "Q": "If the vehicle's right tires travel off the paved portion of the roadway:",
+        "P": "None",
+        "O": ["Apply the brakes and counter-steer to return to the paved portion of the roadway", 
+              "Keep a firm grip on the steering wheel, ease off the gas pedal, and then gradually \nreturn to the paved portion of the roadway", 
+              "Accelerate slightly, then turn the steering wheel sharply to return to the paved \nportion ofthe roadway", 
+              "Move the vehicle completely off the paved portion, then steer back onto the paved \nportion of the roadway"],
+        "A": 2
+    },
+
+    "95":
+    {
+        "Q": "The sign indicates:",
+        "P": "./pictures/Pic96.jpg",
+        "O": ["A school zone", 
+              "School crosswalk ahead", 
+              "Playground zone", 
+              "Pedestrian activated lights ahead"],
+        "A": 2
+    },
+
+    "96":
+    {
+        "Q": "When completing an angle park, the vehicle's front wheel must be within what \nmaximum distance from the nearest curb?",
+        "P": "None",
+        "O": ["100 cm", "50 cm", "25 cm", "75 cm"],
+        "A": 2
+    },
+
+    "97":
+    {
+        "Q": "In an urban area, when a pedestrian is standing at a crosswalk with their arm \nraised at approximately right angles to their body and pointing to the opposite curb, \nwhat does this mean?",
+        "P": "None",
+        "O": ["Drivers must stop and yield to the pedestrian", 
+              "The pedestrian is visually impaired and needs assistance to cross the road", 
+              "Drivers do not have to yield to the pedestrian until they step off the curb", 
+              "Drivers should reduce speed to 20 km/h and be cautious when passing the pedestrian"],
+        "A": 1
+    },
+
+    "98":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic99.jpg",
+        "O": ["Pavement ends", "Construction zone ahead", "Dead end", "Hazard marker"],
+        "A": 3
+    },
+
+    "99":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic100.jpg",
+        "O": ["Divided highway ends", 
+              "Divided highway begins", 
+              "Obstruction - pass on the left", 
+              "Two-way traffic"],
+        "A": 1
+    },
+
+    "100":
+    {
+        "Q": "When approaching an intersection displaying a steady yellow traffic light:",
+        "P": "None",
+        "O": ["Proceed since the light is about to turn green", 
+              "Yield to vehicles on the right",
+              "Stop before the intersection unless the stop cannot be made in safety", 
+              "Increase speed to clear the intersection"],
+        "A": 3
+    },
+
+    "101":
+    {
+        "Q": "A solid yellow line together with a broken yellow line marked on the centre of a \nhighway means:",
+        "P": "None",
+        "O": ["The road narrows ahead", 
+              "If the solid line is on your side, passing is permitted", 
+              "If the broken line is on your side, passing is not permitted", 
+              "If the broken line is on your side, passing is permitted"],
+        "A": 4
+    },
+
+    "102":
+    {
+        "Q": "At 9:00 A.M. on a school day, what is the maximum speed permitted in a school zone \nin a rural area, unless otherwise posted?",
+        "P": "None",
+        "O": ["50 km/h", "20 km/h", "40 km/h", "30 km/h"],
+        "A": 4
+    },
+
+    "103":
+    {
+        "Q": "On a two-lane highway, when passing other vehicles travelling in the same direction.\na driver:",
+        "P": "None",
+        "O": ["Should pass on the left when safe", 
+              "Should pass on the right when safe", 
+              "Should always travel 30 km/h faster than the vehicle being passed", 
+              "Should not pull out to pass until they are within 3 metres of the vehicle being passed"],
+        "A": 1
+    },
+
+    "104":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic105.jpg",
+        "O": ["Off-road facilities", 
+              "Hospital services", 
+              "Hotel services",
+              "Primary highway route marker"],
+        "A": 2
+    },
+
+    "105":
+    {
+        "Q": "What minimum distance from a fire hydrant must a vehicle be parked?",
+        "P": "None",
+        "O": ["3 metres", "4 metres", "2 metres", "5 metres"],
+        "A": 4
+    },
+
+    "106":
+    {
+        "Q": "This sign indicates:",
+        "P": "./pictures/Pic107.jpg",
+        "O": ["Construction sign, flag person ahead", 
+              "Construction sign, detour ahead", 
+              "Caution, falling rock ahead", 
+              "Construction sign, people working ahead"],
+        "A": 4
+    },
+
+    "107":
+    {
+        "Q": "If a driver is being followed by a vehicle that is attempting to pass on a two-way \nroad, the driver should:",
+        "P": "None",
+        "O": ["Stay in the lane and move to the left portion of the lane", 
+              "Stay in the lane and move to the right portion of the lane", 
+              "Turn on the left signal and stay in the lane", 
+              "Turn on the right signal and drive in the parking lane"],
+        "A": 2
+    }   
 }

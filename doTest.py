@@ -4,6 +4,7 @@ import json
 from PIL import ImageTk, Image
 import random
 
+
 # create a start button
 def startWidget():
     global START_BUTTON
@@ -37,11 +38,14 @@ def clearFrame():
 
 
 # show the final score
-def showScore(score):
+def showScore(score, var_int, prev_ref):
+    clearFrame()
+    if prev_ref == var_int:
+        score += 1
     scoreFont = tkf.Font(family="Comic Sans MS", size=24, weight="bold")
     score_str = "Your Score: " + str(score)
     score_label = tk.Label(main_windows, text=score_str, font=scoreFont)
-    score_label.pack(anchor="center")
+    score_label.place(x=400, y=300, anchor='center')
 
 
 QUSET = [] # question set, maximum of length 30, storing all the previous shown questions
@@ -119,13 +123,13 @@ def createQuestion(index, score, var_int, prev_ref):
             main_windows,
             text="Finish",
             font=questionFont,
-            command=lambda: showScore(score),
+            command=lambda: showScore(score, var.get(), A),
         )
 
         finish_button.pack(anchor="s")
 
-# Global Variables
-NUM_OF_QUESTIONS = 2 # This is supposed to be 108 after finishing editing the JSON file
+
+NUM_OF_QUESTIONS = 76
 NUM_OF_QUESTION_PER_SET = 30
 
 if __name__ == "__main__":
