@@ -70,7 +70,7 @@ def createQuestion(index, score, var_int, prev_ref):
     # score
     if prev_ref == var_int:
         score += 1
-    score_str = "Score [%s/30]" % (str(score))
+    score_str = "Score [%s/%s]" % (str(score), str(NUM_OF_QUESTION_PER_SET))
     score_label = tk.Label(main_windows, text=score_str, font=questionFont)
     score_label.pack(anchor="w")
 
