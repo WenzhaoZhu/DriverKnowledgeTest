@@ -1,5 +1,5 @@
 # DriverKnowledgeTest
-This is a program for knowledge test of drivers in Alberta.
+This is a program for the knowledge test of drivers in Alberta.
 
 ## Requirements
 - Python 3.9
