@@ -129,7 +129,7 @@ def createQuestion(index, score, var_int, prev_ref):
         finish_button.pack(anchor="s")
 
 
-NUM_OF_QUESTIONS = 76
+NUM_OF_QUESTIONS = 108
 NUM_OF_QUESTION_PER_SET = 30
 
 if __name__ == "__main__":
