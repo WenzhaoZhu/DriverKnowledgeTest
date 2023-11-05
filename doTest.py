@@ -84,7 +84,7 @@ def createQuestion(index, score, var_int, prev_ref):
     if P != "None":
         # Create an object of tkinter ImageTk
         global img  # This has to be global cuz it will be clear when it's just a local var
-        img = ImageTk.PhotoImage(Image.open("pictures/Pic7.jpg"))
+        img = ImageTk.PhotoImage(Image.open(P))
 
         # Create a Label Widget to display the text or Image
         label_img = tk.Label(main_windows, image=img)
@@ -124,14 +124,13 @@ def createQuestion(index, score, var_int, prev_ref):
 
         finish_button.pack(anchor="s")
 
-
+# Global Variables
 NUM_OF_QUESTIONS = 2 # This is supposed to be 108 after finishing editing the JSON file
 NUM_OF_QUESTION_PER_SET = 30
+
 if __name__ == "__main__":
     main_windows = tk.Tk()
-
     main_windows.title("Alberta Driver's Knowledge Quiz")
     main_windows.geometry("800x600")
-
     startWidget()
     main_windows.mainloop()
