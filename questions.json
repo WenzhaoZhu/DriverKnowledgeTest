@@ -20,7 +20,7 @@
 
     "2": 
     {
-        "Q": "When approaching an intersection and facing a traffic control light that is showing \nagreen right-turn arrow and a red light, a driver:",
+        "Q": "When approaching an intersection and facing a traffic control light that is showing \na green right-turn arrow and a red light, a driver:",
         "P": "None",
         "O": ["Must stop and wait for a green light before turning in the direction of the arrow",
               "May go straight through the intersection without stopping",
@@ -348,7 +348,7 @@
     {
         "Q": "A 'Weave Zone' is best described as:",
         "P": "None",
-        "O": ["A place on a highway where the entrance and exit lanes are cose together, and \nvehicles that are slowing to exit the highway must drive between vehicles that are \naccelerating to enter the highway", 
+        "O": ["A place on a highway where the entrance and exit lanes are close together, and \nvehicles that are slowing to exit the highway must drive between vehicles that are \naccelerating to enter the highway", 
               "An area on the highway that is used for emergency parking", 
               "A place where the highway has a series of curves that require the driver to slow down", 
               "A limited access area on a highway where a driver can legally back their vehicle \nwhen they miss their exit"],
