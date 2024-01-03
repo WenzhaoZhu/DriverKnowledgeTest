@@ -12,4 +12,4 @@ python doTest.py
 ```
 
 ## Adjust Arguments
-Change ```NUM_OF_QUESTION_PER_SET``` to adjust the number of questions in a set.
+Change ```NUM_OF_QUESTION_PER_SET``` to adjust the number of questions in a set. (30 by default, maximum 108)
