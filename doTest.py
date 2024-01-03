@@ -56,7 +56,7 @@ def createQuestion(index, score, var_int, prev_ref):
 
     # Initicalize the question number to bound it
     questionNum = -1
-    while len(QUSET) != index + 1:
+    while len(QUSET) != index + 1: # keep generating the number until meet a new number
         questionNum = random.randint(0, NUM_OF_QUESTIONS - 1)
         if questionNum not in QUSET:
             QUSET.append(questionNum)
@@ -75,7 +75,6 @@ def createQuestion(index, score, var_int, prev_ref):
     score_label.pack(anchor="w")
 
     # NO. of a question
-
     qNum_str = "[%s]" % (str(index + 1))
     label = tk.Label(main_windows, text=qNum_str, font=questionFont)
     label.pack()
