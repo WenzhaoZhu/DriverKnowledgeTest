@@ -11,5 +11,5 @@ This is a program for the knowledge test of drivers in Alberta.
 python doTest.py
 ```
 
-# Adjust Arguments
+## Adjust Arguments
 Change ```NUM_OF_QUESTION_PER_SET``` to adjust the number of questions in a set.
