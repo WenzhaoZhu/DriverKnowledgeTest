@@ -947,7 +947,7 @@
         "Q": "The recommended method for travelling through a curve on a highway is:",
         "P": "None",
         "O": ["Reduce speed before the curve, stay in the lane and gently accelerate after \nentering the curve", 
-              "Maintain speed before the curve, brake in the curve, ook ahead and accelerate out \nof the curve", 
+              "Maintain speed before the curve, brake in the curve, look ahead and accelerate out \nof the curve", 
               "Cover the brake pedal before the curve, counter-steer toward the outside of the \nlane and accelerate when exiting", 
               "Accelerate before the curve, cover the brake pedal in the curve and accelerate \nafter leaving the curve"],
         "A": 1
