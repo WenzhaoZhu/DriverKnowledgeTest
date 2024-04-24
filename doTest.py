@@ -4,7 +4,6 @@ import json
 from PIL import ImageTk, Image
 import random
 
-
 # create a start button
 def startWidget():
     global START_BUTTON
