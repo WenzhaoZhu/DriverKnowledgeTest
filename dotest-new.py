@@ -16,7 +16,7 @@ NUM_OF_QUESTION_PER_SET = 30
 
 def read_questions():
     """Read all questions from JSON file"""
-    with open("questions.json", "r") as f:
+    with open("./static/questions.json", "r") as f:
         return json.load(f)
 
 def get_random_questions(num_questions):
