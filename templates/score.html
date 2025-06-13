@@ -7,6 +7,7 @@
             <h2 class="card-title">Quiz Complete!</h2>
             <h3 class="display-4 mb-3">Your Score: {{ score }}/{{ total_questions }}</h3>
             <p class="lead">Percentage: {{ (score / total_questions * 100)|round|int }}%</p>
+            <p class="lead">Time taken: {{ duration_minutes }} minutes {{ duration_seconds }} seconds</p>
             <a href="{{ url_for('home') }}" class="btn btn-primary">Start New Quiz</a>
         </div>
     </div>

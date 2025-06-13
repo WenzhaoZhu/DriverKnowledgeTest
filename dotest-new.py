@@ -4,6 +4,7 @@ import json
 import random
 from datetime import datetime
 import os
+from functools import wraps
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-here'  # Required for session and CSRF
@@ -23,6 +24,34 @@ def get_random_questions(num_questions):
     all_questions = list(range(NUM_OF_QUESTIONS))
     return random.sample(all_questions, num_questions)
 
+def init_session():
+    """Initialize or reset session variables"""
+    # Store only question numbers in session, not the full question data
+    session['questions'] = get_random_questions(NUM_OF_QUESTION_PER_SET)
+    session['current_question'] = 0
+    session['score'] = 0
+    session['start_time'] = datetime.now().isoformat()
+    session['answers'] = []  # Store only essential answer data
+    session['scored_questions'] = []  # Track which questions have been scored
+    # Remove questions_data from session as it's too large
+    if 'questions_data' in session:
+        del session['questions_data']
+
+def get_question_data(question_num):
+    """Get question data from JSON file"""
+    # Read from file each time instead of storing in session
+    questions_data = read_questions()
+    return questions_data[str(question_num)]
+
+def requires_quiz_session(f):
+    """Decorator to ensure quiz session is active"""
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'questions' not in session:
+            return redirect(url_for('home'))
+        return f(*args, **kwargs)
+    return decorated_function
+
 @app.route('/')
 def home():
     """Render the home page"""
@@ -34,37 +63,26 @@ def home():
 @app.route('/start-quiz')
 def start_quiz():
     """Initialize and start the quiz"""
-    # Generate random questions for this session
-    session['questions'] = get_random_questions(NUM_OF_QUESTION_PER_SET)
-    session['current_question'] = 0
-    session['score'] = 0
-    session['start_time'] = datetime.now().isoformat()
-    session['revealed_answers'] = []  # Track which questions had answers revealed
-    session['user_answers'] = []  # Track user's answers for each question
-    session['scored_questions'] = []  # Track which questions have been scored
+    init_session()
     return redirect(url_for('show_question'))
 
 @app.route('/question')
+@requires_quiz_session
 def show_question():
     """Show the current question"""
-    if 'questions' not in session:
-        return redirect(url_for('home'))
-    
     current_index = session['current_question']
     if current_index >= NUM_OF_QUESTION_PER_SET:
         return redirect(url_for('show_score'))
     
     question_num = session['questions'][current_index]
-    questions_data = read_questions()
-    question_data = questions_data[str(question_num)]
+    question_data = get_question_data(question_num)
     
     # Get user's previous answer for this question if it exists
-    user_answer = None
-    if 'user_answers' in session and current_index < len(session['user_answers']):
-        user_answer = session['user_answers'][current_index]
+    answer_data = session['answers'][current_index] if current_index < len(session['answers']) else None
+    user_answer = answer_data['user_answer'] if answer_data else None
     
-    # Check if this question has already been scored
-    is_scored = current_index in session.get('scored_questions', [])
+    # A question is only scored if it has been answered
+    is_scored = answer_data is not None
     
     return render_template('question.html',
                          question=question_data['Q'],
@@ -77,85 +95,102 @@ def show_question():
                          is_scored=is_scored)
 
 @app.route('/previous-question')
+@requires_quiz_session
 def previous_question():
     """Go back to the previous question"""
-    if 'current_question' in session and session['current_question'] > 0:
+    if session['current_question'] > 0:
         session['current_question'] -= 1
     return redirect(url_for('show_question'))
 
 @app.route('/check_answer', methods=['POST'])
+@requires_quiz_session
 def check_answer():
     """Handle answer submission"""
-    if 'questions' not in session:
-        return redirect(url_for('home'))
-    
-    current_index = session['current_question']
-    if current_index >= NUM_OF_QUESTION_PER_SET:
-        return redirect(url_for('show_score'))
-    
-    # Get the user's answer
-    user_answer = int(request.form.get('answer', 0))
-    
-    # Get the correct answer
-    question_num = session['questions'][current_index]
-    questions_data = read_questions()
-    correct_answer = questions_data[str(question_num)]['A']
-    
-    # Store the answer
-    if 'answers' not in session:
-        session['answers'] = []
-    while len(session['answers']) <= current_index:
-        session['answers'].append({})
-    session['answers'][current_index] = {
-        'question': question_num,
-        'user_answer': user_answer,
-        'correct_answer': correct_answer,
-        'is_correct': user_answer == correct_answer
-    }
-    
-    # Store user's answer
-    if 'user_answers' not in session:
-        session['user_answers'] = []
-    while len(session['user_answers']) <= current_index:
-        session['user_answers'].append(None)
-    session['user_answers'][current_index] = user_answer
-    
-    # Update score if answer is correct
-    if user_answer == correct_answer:
-        if 'score' not in session:
-            session['score'] = 0
-        if current_index not in session.get('scored_questions', []):
-            session['score'] = session.get('score', 0) + 1
-            if 'scored_questions' not in session:
-                session['scored_questions'] = []
-            session['scored_questions'].append(current_index)
-    
-    # Move to next question
-    session['current_question'] = current_index + 1
-    
-    # If this was the last question, show the score
-    if current_index + 1 >= NUM_OF_QUESTION_PER_SET:
-        return redirect(url_for('show_score'))
-    
-    return redirect(url_for('show_question'))
+    try:
+        current_index = session['current_question']
+        if current_index >= NUM_OF_QUESTION_PER_SET:
+            return redirect(url_for('show_score'))
+        
+        # Get the user's answer with better error handling
+        answer = request.form.get('answer')
+        if answer is None:
+            app.logger.error("No answer submitted in form data")
+            return "No answer submitted", 400
+            
+        try:
+            user_answer = int(answer)
+        except ValueError:
+            app.logger.error(f"Invalid answer value submitted: {answer}")
+            return "Invalid answer value", 400
+            
+        if user_answer not in [1, 2, 3, 4]:
+            app.logger.error(f"Answer out of valid range: {user_answer}")
+            return "Answer must be between 1 and 4", 400
+        
+        question_num = session['questions'][current_index]
+        question_data = get_question_data(question_num)
+        correct_answer = question_data['A']
+        
+        # Store only essential answer data
+        while len(session['answers']) <= current_index:
+            session['answers'].append({})
+        
+        # Get previous answer data if it exists
+        previous_answer = session['answers'][current_index]
+        was_correct = previous_answer.get('is_correct', False) if previous_answer else False
+        
+        is_correct = user_answer == correct_answer
+        session['answers'][current_index] = {
+            'question_num': question_num,  # Store only the question number
+            'user_answer': user_answer,
+            'is_correct': is_correct
+        }
+        
+        # Update score based on whether the answer changed from correct to incorrect or vice versa
+        if was_correct and not is_correct:
+            session['score'] = max(0, session.get('score', 0) - 1)  # Decrement score if changing from correct to incorrect
+        elif not was_correct and is_correct:
+            session['score'] = session.get('score', 0) + 1  # Increment score if changing from incorrect to correct
+        
+        # Move to next question
+        session['current_question'] = current_index + 1
+        
+        # If this was the last question, show the score
+        if current_index + 1 >= NUM_OF_QUESTION_PER_SET:
+            return redirect(url_for('show_score'))
+        
+        return redirect(url_for('show_question'))
+        
+    except Exception as e:
+        app.logger.error(f"Error processing answer: {str(e)}")
+        return "An error occurred while processing your answer", 400
 
 @app.route('/show_score')
+@requires_quiz_session
 def show_score():
     """Show the final score and review all answers"""
-    if 'questions' not in session:
-        return redirect(url_for('home'))
+    # Record end time
+    session['end_time'] = datetime.now().isoformat()
     
-    # Calculate final score
-    final_score = session.get('score', 0)
+    # Calculate duration
+    start_time = datetime.fromisoformat(session['start_time'])
+    end_time = datetime.fromisoformat(session['end_time'])
+    duration = end_time - start_time
+    minutes = duration.seconds // 60
+    seconds = duration.seconds % 60
+    
+    # Recalculate final score by counting all correct answers
+    final_score = sum(1 for answer in session['answers'] if answer.get('is_correct', False))
     total_questions = NUM_OF_QUESTION_PER_SET
     
-    # Get all questions and answers for review
-    questions_data = read_questions()
-    review_data = []
+    # Update the session score to match the actual count
+    session['score'] = final_score
     
+    # Get all questions and answers for review
+    review_data = []
     for i, question_num in enumerate(session['questions']):
-        question_data = questions_data[str(question_num)]
-        answer_data = session['answers'][i] if i < len(session.get('answers', [])) else None
+        question_data = get_question_data(question_num)
+        answer_data = session['answers'][i] if i < len(session['answers']) else None
         
         review_data.append({
             'question_num': i + 1,
@@ -170,7 +205,9 @@ def show_score():
     return render_template('score.html',
                          score=final_score,
                          total_questions=total_questions,
-                         review_data=review_data)
+                         review_data=review_data,
+                         duration_minutes=minutes,
+                         duration_seconds=seconds)
 
 if __name__ == '__main__':
     # Create templates directory if it doesn't exist

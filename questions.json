@@ -742,7 +742,7 @@
         "P": "./pictures/Pic71.jpg",
         "O": ["Through lane only", 
               "Passing permitted", 
-              "No turns permittea", 
+              "No turns permitted", 
               "Two-way traffic"],
         "A": 4
     },   
@@ -848,7 +848,7 @@
         "Q": "When a vehicle is stopped to allow a pedestrian to cross the road, other vehicles \nthat are approaching from the rear:",
         "P": "None",
         "O": ["May pass the stopped vehicle if there is no oncoming traffic that may impede \npassing safely", 
-              "Must not pass the stopped vehicle. lt is illegal", 
+              "Must not pass the stopped vehicle. It is illegal", 
               "May pass the stopped vehicle when eve contact is made with the pedestrian and the \npedestrian stops", 
               "May pass the stopped vehicle when the pedestrian crossing signal has changed \nto'Don't Walk'"],
         "A": 2

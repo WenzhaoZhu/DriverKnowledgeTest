@@ -14,6 +14,9 @@
         <div class="progress-text">
             Question {{ question_num }} of {{ total_questions }}
         </div>
+        <div class="timer-text text-end mt-2">
+            Time: <span id="quizTimer">00:00</span>
+        </div>
     </div>
 
     <div class="card shadow-sm">
@@ -30,12 +33,11 @@
             <form method="POST" action="{{ url_for('check_answer') }}" id="answerForm" data-scored="{{ is_scored|tojson }}">
                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                 {% for option in options %}
-                <div class="form-check mb-3 p-2 rounded {% if is_scored and loop.index == correct_answer %}bg-success bg-opacity-10{% endif %}">
+                <div class="form-check mb-3 p-2 rounded">
                     <input class="form-check-input" type="radio" name="answer" 
                            id="option{{ loop.index }}" value="{{ loop.index }}"
-                           {% if user_answer == loop.index %}checked{% endif %}
-                           {% if is_scored %}disabled{% endif %}>
-                    <label class="form-check-label fs-5 {% if is_scored and loop.index == correct_answer %}text-success fw-bold{% endif %}" 
+                           {% if user_answer == loop.index %}checked{% endif %}>
+                    <label class="form-check-label fs-5" 
                            for="option{{ loop.index }}">
                         {{ option }}
                     </label>
@@ -51,8 +53,7 @@
                     <div></div>
                     {% endif %}
 
-                    <button type="submit" class="btn btn-primary btn-lg" 
-                            {% if is_scored %}disabled{% endif %}>
+                    <button type="submit" class="btn btn-primary btn-lg">
                         {% if question_num == total_questions %}Finish Quiz{% else %}Next Question <i class="bi bi-arrow-right"></i>{% endif %}
                     </button>
                 </div>
@@ -162,9 +163,40 @@
     background-color: #6c757d;
     border-color: #6c757d;
 }
+
+.timer-text {
+    font-size: 1.1rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+#quizTimer {
+    font-family: monospace;
+    font-weight: bold;
+    color: #0d6efd;
+}
 </style>
 
 <script>
+// Timer functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const startTime = new Date("{{ session.start_time }}");
+    const timerDisplay = document.getElementById('quizTimer');
+    
+    function updateTimer() {
+        const now = new Date();
+        const elapsed = Math.floor((now - startTime) / 1000); // elapsed time in seconds
+        const minutes = Math.floor(elapsed / 60);
+        const seconds = elapsed % 60;
+        timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }
+    
+    // Update timer immediately and then every second
+    updateTimer();
+    setInterval(updateTimer, 1000);
+});
+
+// Form validation
 document.getElementById('answerForm').addEventListener('submit', function(e) {
     if (!document.querySelector('input[name="answer"]:checked') && !JSON.parse(this.dataset.scored)) {
         e.preventDefault();
