@@ -86,7 +86,7 @@ http://localhost:5000
 ### Legacy Version
 1. Run the application:
 ```bash
-python doTest.py
+python dotest-legacy.py
 ```
 
 2. Click "Start" to begin a new quiz session
@@ -96,18 +96,6 @@ python doTest.py
 
 Note: You can adjust the number of questions by changing `NUM_OF_QUESTION_PER_SET` in the application files (default: 30, maximum: 108)
 
-## Project Structure
-
-- `dotest-new.py` - Main Flask application (web version)
-- `doTest.py` - Legacy Tkinter application
-- `templates/` - HTML templates (web version)
-  - `base.html` - Base template with common elements
-  - `question.html` - Quiz question template
-  - `score.html` - Final score and review template
-- `static/` - Static files (web version)
-  - `pictures/` - Question images
-- `questions.json` - Question database
-- `requirements.txt` - Python dependencies for web version
 
 ## License
 
