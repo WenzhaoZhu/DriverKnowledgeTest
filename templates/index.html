@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="quiz-container text-center">
+    <h1 class="display-4 mb-4">Welcome to the Alberta Driver's Knowledge Quiz</h1>
+    <p class="lead mb-4">Test your knowledge of Alberta's driving rules and regulations</p>
+    
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Quiz Information</h5>
+                    <ul class="list-unstyled text-start">
+                        <li>✓ {{ NUM_OF_QUESTION_PER_SET }} questions per quiz</li>
+                        <li>✓ Random selection from {{ NUM_OF_QUESTIONS }} questions</li>
+                        <li>✓ Immediate feedback on answers</li>
+                        <li>✓ Detailed review at the end</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="{{ url_for('start_quiz') }}" class="btn btn-primary btn-lg">
+                Start Quiz
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %} 

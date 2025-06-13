@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="progress-container mb-4">
+        <div class="progress" style="height: 25px;">
+            <div class="progress-bar bg-primary" role="progressbar" 
+                 style="width: {{ (question_num / total_questions * 100)|round|int }}%"
+                 aria-valuenow="{{ question_num }}" 
+                 aria-valuemin="0" 
+                 aria-valuemax="{{ total_questions }}">
+            </div>
+        </div>
+        <div class="progress-text">
+            Question {{ question_num }} of {{ total_questions }}
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title text-primary mb-3">Question {{ question_num }}</h5>
+            <p class="card-text fs-5">{{ question }}</p>
+            
+            {% if image and image != "None" %}
+            <div class="text-center mb-4">
+                <img src="{{ url_for('static', filename=image) }}" class="img-fluid rounded shadow-sm" alt="Question Image">
+            </div>
+            {% endif %}
+
+            <form method="POST" action="{{ url_for('check_answer') }}" id="answerForm" data-scored="{{ is_scored|tojson }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                {% for option in options %}
+                <div class="form-check mb-3 p-2 rounded {% if is_scored and loop.index == correct_answer %}bg-success bg-opacity-10{% endif %}">
+                    <input class="form-check-input" type="radio" name="answer" 
+                           id="option{{ loop.index }}" value="{{ loop.index }}"
+                           {% if user_answer == loop.index %}checked{% endif %}
+                           {% if is_scored %}disabled{% endif %}>
+                    <label class="form-check-label fs-5 {% if is_scored and loop.index == correct_answer %}text-success fw-bold{% endif %}" 
+                           for="option{{ loop.index }}">
+                        {{ option }}
+                    </label>
+                </div>
+                {% endfor %}
+
+                <div class="d-flex justify-content-between mt-4">
+                    {% if question_num > 1 %}
+                    <a href="{{ url_for('previous_question') }}" class="btn btn-outline-secondary btn-lg">
+                        <i class="bi bi-arrow-left"></i> Previous Question
+                    </a>
+                    {% else %}
+                    <div></div>
+                    {% endif %}
+
+                    <button type="submit" class="btn btn-primary btn-lg" 
+                            {% if is_scored %}disabled{% endif %}>
+                        {% if question_num == total_questions %}Finish Quiz{% else %}Next Question <i class="bi bi-arrow-right"></i>{% endif %}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+.progress-container {
+    position: relative;
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+    border-radius: 8px;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #212529;
+    font-weight: 600;
+    z-index: 1;
+    text-shadow: 0 0 2px rgba(255,255,255,0.8);
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.form-check-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,0.25);
+}
+
+.form-check {
+    transition: background-color 0.2s ease;
+}
+
+.form-check:hover {
+    background-color: #f8f9fa;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-1px);
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.text-primary {
+    color: #0d6efd !important;
+}
+
+.bg-success.bg-opacity-10 {
+    border-left: 4px solid #198754;
+}
+
+.form-check-input:disabled {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+}
+
+.form-check-input:disabled:checked {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+</style>
+
+<script>
+document.getElementById('answerForm').addEventListener('submit', function(e) {
+    if (!document.querySelector('input[name="answer"]:checked') && !JSON.parse(this.dataset.scored)) {
+        e.preventDefault();
+        alert('Please select an answer before proceeding.');
+    }
+});
+</script>
+{% endblock %} 
