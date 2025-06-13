@@ -90,7 +90,7 @@ python doTest.py
 4. Use the "Next" button to proceed
 5. View your final score at the end
 
-Note: For the legacy version, you can adjust the number of questions by changing `NUM_OF_QUESTION_PER_SET` in `doTest.py` (default: 30, maximum: 108)
+Note: You can adjust the number of questions by changing `NUM_OF_QUESTION_PER_SET` in the application files (default: 30, maximum: 108)
 
 ## Project Structure
 
