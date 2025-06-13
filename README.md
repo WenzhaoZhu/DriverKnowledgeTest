@@ -8,12 +8,16 @@ A web-based quiz application for practicing Alberta's driver's knowledge test. T
 - Modern web interface built with Flask and Bootstrap
 - 30 questions per quiz session, randomly selected from a pool of questions
 - Progress tracking with visual progress bar
-- Immediate feedback on answers
-- Comprehensive review at the end of the quiz
+- Real-time timer tracking quiz duration
 - Support for questions with images
 - Mobile-responsive design
-- Previous/Next navigation between questions
-- Final score and detailed answer review
+- Flexible navigation between questions (Previous/Next)
+- Dynamic scoring system that updates when answers are changed
+- Comprehensive final review showing:
+  - Final score with percentage
+  - Total time taken to complete the quiz
+  - Detailed review of all questions with correct/incorrect answers highlighted
+- Session-based state management with CSRF protection
 
 ### Legacy Version (Tkinter)
 - Desktop application with Tkinter GUI
