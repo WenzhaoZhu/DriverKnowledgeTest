@@ -5,6 +5,9 @@ from PIL import ImageTk, Image
 import random
 
 
+QUESTIONS_PATH = "./static/questions.json"
+
+
 # create a start button
 def startWidget():
     global START_BUTTON
@@ -24,7 +27,7 @@ def startWidget():
 
 # Read JSON file
 def read_JSON(num):
-    with open("questions.json", "r") as f:
+    with open(QUESTIONS_PATH, "r") as f:
         data = json.load(f)
         return (
             data[str(num)]["Q"],
@@ -49,7 +52,7 @@ def showScore(score):
     score_label.place(x=400, y=300, anchor="center")
 
 
-QUSET = []  # question set, maximum of length 30, storing all the previous shown questions
+QUSET = []  # question set, maximum of length 30
 
 
 # create one questions
@@ -87,7 +90,8 @@ def createQuestion(index, score, flag, questionNum):
     # Picture if applicable
     if P != "None":
         # Create an object of tkinter ImageTk
-        global img  # This has to be global cuz it will be clear when it's just a local var
+        # This has to be global cuz it will be clear when it's just a local var
+        global img
         img = ImageTk.PhotoImage(Image.open(P))
 
         # Create a Label Widget to display the text or Image
@@ -184,7 +188,9 @@ def judge_right_or_wrong(index, score, var_int, prev_ref, qNum):
 
     else:  # when it's not the last question
         if var_int == prev_ref:
-            createQuestion(index + 1, score + 1, True, qNum)  # show the next question
+            createQuestion(
+                index + 1, score + 1, True, qNum
+            )  # show the next question
         else:
             createQuestion(
                 index, score, False, qNum

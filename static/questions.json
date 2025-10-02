@@ -62,7 +62,7 @@
     "6":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic7.jpg",
+        "P": "./static/pictures/Pic7.jpg",
         "O": ["Route for vehicles over 4500 kg",
               "Route for slow moving vehicles",
               "Reserved lane for buses",
@@ -106,7 +106,7 @@
     "10":
     {
         "Q": "This sign indicates",
-        "P": "./pictures/Pic11.jpg",
+        "P": "./static/pictures/Pic11.jpg",
         "O": ["Off-road facilities ahead", 
               "Slippery when wet", 
               "Uneven pavement", 
@@ -117,7 +117,7 @@
     "11":
     {
         "Q": "A traffic-lane control light with an illuminated red 'x' means:",
-        "P": "./pictures/Pic12.jpg",
+        "P": "./static/pictures/Pic12.jpg",
         "O": ["Prepare for an emergency vehicle travelling in that lane", 
               "Reduce speed to below 30 km/h", 
               "Use that lane only for the purpose of making left turns", 
@@ -183,7 +183,7 @@
     "17":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic18.jpg",
+        "P": "./static/pictures/Pic18.jpg",
         "O": ["Traffic entering from the right", 
               "Winding road ahead", 
               "Curve right", 
@@ -205,7 +205,7 @@
     "19":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic20.jpg",
+        "P": "./static/pictures/Pic20.jpg",
         "O": ["Do not enter", 
               "Slow moving vehicles ahead", 
               "Warning, Yield sign ahead", 
@@ -246,7 +246,7 @@
     "23":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic24.jpg",
+        "P": "./static/pictures/Pic24.jpg",
         "O": ["Road narrows, left", 
               "Two-way traffic", 
               "Divided highway ends",
@@ -257,7 +257,7 @@
     "24":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic25.jpg",
+        "P": "./static/pictures/Pic25.jpg",
         "O": ["Rumble strips", 
               "Construction zone", 
               "Bump", 
@@ -380,7 +380,7 @@
     "36":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic37.jpg",
+        "P": "./static/pictures/Pic37.jpg",
         "O": ["Children playing in residential area", 
               "Pedestrian crosswalk ahead", 
               "School area", 
@@ -446,7 +446,7 @@
     "42":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic43.jpg",
+        "P": "./static/pictures/Pic43.jpg",
         "O": ["Heavy trucks only", "Do not pass", "No vehicles allowed", "Do not enter"],
         "A": 2
     },
@@ -531,7 +531,7 @@
     "50":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic51.jpg",
+        "P": "./static/pictures/Pic51.jpg",
         "O": ["Lane ends, loss of right lane", 
               "Added lane (free flow)", 
               "Curve right", 
@@ -575,7 +575,7 @@
     "54":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic55.jpg",
+        "P": "./static/pictures/Pic55.jpg",
         "O": ["Playground zone", 
               "Pedestrian crosswalk", 
               "Designated school bus stop", 
@@ -627,7 +627,7 @@
     "59":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic60.jpg",
+        "P": "./static/pictures/Pic60.jpg",
         "O": ["T intersection", 
               "Traffic lane ends", 
               "Concealed intersection", 
@@ -638,7 +638,7 @@
     "60":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic61.jpg",
+        "P": "./static/pictures/Pic61.jpg",
         "O": ["Winding road ahead", 
               "Weave zone ahead", 
               "Slippery when wet", 
@@ -682,7 +682,7 @@
     "64":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic65.jpg",
+        "P": "./static/pictures/Pic65.jpg",
         "O": ["'T' intersection", 
               "Winding road ahead", 
               "Merging traffic", 
@@ -728,7 +728,7 @@
     "69":
     {
         "Q": "When are dual turns permitted at an intersection?",
-        "P": "./pictures/Pic70.jpg",
+        "P": "./static/pictures/Pic70.jpg",
         "O": ["Only when turning from a one-way road onto a one-way road", 
               "Only when indicated by pavement markings or traffic control signs", 
               "Any time there are at least 2 lanes on the road being entered", 
@@ -739,7 +739,7 @@
     "70":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic71.jpg",
+        "P": "./static/pictures/Pic71.jpg",
         "O": ["Through lane only", 
               "Passing permitted", 
               "No turns permitted", 
@@ -780,7 +780,7 @@
     "74":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic75.jpg",
+        "P": "./static/pictures/Pic75.jpg",
         "O": ["Sharp left curve in the road ahead", 
               "Left turns are prohibited", 
               "Vehicles may turn left or go straight", 
@@ -813,7 +813,7 @@
     "77":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic78.jpg",
+        "P": "./static/pictures/Pic78.jpg",
         "O": ["Emergency vehicles entering roadway", 
               "The designated lane is closed", 
               "Railway crossing", 
@@ -835,7 +835,7 @@
     "79":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic80.jpg",
+        "P": "./static/pictures/Pic80.jpg",
         "O": ["Lane is reserved for use by the specified vehicles", 
               "One-way traffic only", 
               "Car pool vehicles only", 
@@ -868,7 +868,7 @@
     "82":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic83.jpg",
+        "P": "./static/pictures/Pic83.jpg",
         "O": ["School zone ahead", 
               "Caution log trucks turning", 
               "Traffic control signal advance warning", 
@@ -912,7 +912,7 @@
     "86":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic87.jpg",
+        "P": "./static/pictures/Pic87.jpg",
         "O": ["No through traffic or right turns", 
               "Turn left or go straight through", 
               "Turn from a one-way road onto a one-way road", 
@@ -956,7 +956,7 @@
     "90":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic91.jpg",
+        "P": "./static/pictures/Pic91.jpg",
         "O": ["Yield the right-of-way to pedestrians and traffic", 
               "Dangerous goods vehicle placard: flammable gas", 
               "Slow moving vehicle", 
@@ -978,7 +978,7 @@
     "92":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic93.jpg",
+        "P": "./static/pictures/Pic93.jpg",
         "O": ["Playground zone ahead", 
               "Pedestrian crossing ahead", 
               "School bus stop ahead", 
@@ -1011,7 +1011,7 @@
     "95":
     {
         "Q": "The sign indicates:",
-        "P": "./pictures/Pic96.jpg",
+        "P": "./static/pictures/Pic96.jpg",
         "O": ["A school zone", 
               "School crosswalk ahead", 
               "Playground zone", 
@@ -1041,7 +1041,7 @@
     "98":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic99.jpg",
+        "P": "./static/pictures/Pic99.jpg",
         "O": ["Pavement ends", "Construction zone ahead", "Dead end", "Hazard marker"],
         "A": 3
     },
@@ -1049,7 +1049,7 @@
     "99":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic100.jpg",
+        "P": "./static/pictures/Pic100.jpg",
         "O": ["Divided highway ends", 
               "Divided highway begins", 
               "Obstruction - pass on the left", 
@@ -1101,7 +1101,7 @@
     "104":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic105.jpg",
+        "P": "./static/pictures/Pic105.jpg",
         "O": ["Off-road facilities", 
               "Hospital services", 
               "Hotel services",
@@ -1120,7 +1120,7 @@
     "106":
     {
         "Q": "This sign indicates:",
-        "P": "./pictures/Pic107.jpg",
+        "P": "./static/pictures/Pic107.jpg",
         "O": ["Construction sign, flag person ahead", 
               "Construction sign, detour ahead", 
               "Caution, falling rock ahead", 
